@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Restaurant digital transformation case study for Aurum, a fictional fine-dining restaurant in Manchester.">
+  <meta name="author" content="Saifullah Shafique">
+  <title>Problem-Solving: Aurum Case Study | Saif Shafique</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts (Playfair Display for headings, Inter for body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;700&amp;display=swap" rel="stylesheet">
+  <!-- one external stylesheet shared by all five pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <!-- ===== Site header and primary navigation ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="38" height="38">
+          <span>Saif Shafique</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="showcase.html">Business Showcase</a></li>
+          <li><a href="solution.html" aria-current="page">Problem-Solving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Restaurant hero ===== -->
+    <section class="restaurant-hero" aria-labelledby="aurum-title">
+      <div class="container">
+        <span class="eyebrow reveal">Problem-Solving Page &middot; Restaurant case study</span>
+        <h1 id="aurum-title" class="reveal reveal-delay-1">AURUM</h1>
+        <p class="lead reveal reveal-delay-2 mx-auto">Modern British fine dining in Spinningfields, Manchester. A digital transformation prototype designed by Saif Shafique, acting as the restaurant&rsquo;s Chief Technology Officer.</p>
+        <div class="btn-row reveal reveal-delay-3 justify-center">
+          <a class="btn btn-primary" href="#book">Reserve a table</a>
+          <a class="btn btn-ghost" href="#menu">View the menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== (1) Business context ===== -->
+    <section class="section" aria-labelledby="context-title">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <span class="eyebrow">Business context</span>
+          <h2 id="context-title">Why Aurum needs to transform</h2>
+          <p>Aurum is a fictional 60-cover fine-dining restaurant. Its food is excellent, but its digital presence has not kept up. Bookings are taken only by phone, the menu is a PDF that is hard to read on a mobile, there is no way to collect feedback, and loyal guests are not rewarded.</p>
+          <p>As CTO, my brief is to use web technology to help Aurum compete with newer restaurants that already offer a seamless online experience.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card reveal reveal-delay-1"><h3>Engagement</h3><p>Social media integration, promotions and a loyalty scheme.</p></div>
+          <div class="card reveal reveal-delay-2"><h3>Efficiency</h3><p>Structured online booking requests reduce phone time.</p></div>
+          <div class="card reveal reveal-delay-1"><h3>Experience</h3><p>A fast, accessible, mobile-friendly menu and booking flow.</p></div>
+          <div class="card reveal reveal-delay-2"><h3>Promotion</h3><p>Timed events and email marketing with clear consent.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Digital menu ===== -->
+    <section class="section section-alt" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 id="menu-title" class="reveal text-center">Digital menu</h2>
+        <p class="lead reveal text-center mx-auto">Replacing the old PDF with a responsive, accessible menu. Use the tabs or your arrow keys. V means vegetarian and GF means gluten free.</p>
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu sections">
+          <button type="button" role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="true">Starters</button>
+          <button type="button" role="tab" id="tab-mains" aria-controls="panel-mains" aria-selected="false" tabindex="-1">Mains</button>
+          <button type="button" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+        </div>
+        <div class="card reveal">
+          <div class="menu-panel" id="panel-starters" role="tabpanel" aria-labelledby="tab-starters">
+            <div class="menu-item"><div><h3>Hand-dived scallop <span class="diet">GF</span></h3><p>Cauliflower velout&eacute;, golden raisin, curry oil</p></div><span class="price">&pound;18</span></div>
+            <div class="menu-item"><div><h3>Heritage beetroot <span class="diet">V</span><span class="diet">GF</span></h3><p>Whipped goat&rsquo;s curd, candied walnut, aged balsamic</p></div><span class="price">&pound;14</span></div>
+            <div class="menu-item"><div><h3>Lancashire lamb croquette</h3><p>Smoked aubergine, mint gel, lamb jus</p></div><span class="price">&pound;16</span></div>
+          </div>
+          <div class="menu-panel" id="panel-mains" role="tabpanel" aria-labelledby="tab-mains" hidden>
+            <div class="menu-item"><div><h3>Aged beef fillet <span class="diet">GF</span></h3><p>Truffle pomme pur&eacute;e, charred shallot, bone-marrow sauce</p></div><span class="price">&pound;42</span></div>
+            <div class="menu-item"><div><h3>Cornish cod</h3><p>Brown shrimp butter, samphire, crushed new potatoes</p></div><span class="price">&pound;34</span></div>
+            <div class="menu-item"><div><h3>Wild mushroom risotto <span class="diet">V</span><span class="diet">GF</span></h3><p>Aged parmesan, black garlic, crispy sage</p></div><span class="price">&pound;26</span></div>
+          </div>
+          <div class="menu-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" hidden>
+            <div class="menu-item"><div><h3>Gold leaf chocolate d&ocirc;me <span class="diet">V</span></h3><p>Salted caramel, hazelnut praline, cr&egrave;me fra&icirc;che</p></div><span class="price">&pound;13</span></div>
+            <div class="menu-item"><div><h3>Yorkshire rhubarb <span class="diet">V</span><span class="diet">GF</span></h3><p>Vanilla custard, ginger crumb, rhubarb sorbet</p></div><span class="price">&pound;12</span></div>
+            <div class="menu-item"><div><h3>British cheese selection <span class="diet">V</span></h3><p>Quince, celery, house crackers</p></div><span class="price">&pound;15</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Promotion and loyalty ===== -->
+    <section class="section" aria-label="Promotions and loyalty">
+      <div class="container grid grid-2">
+        <div class="card reveal text-center">
+          <span class="eyebrow">Promotion</span>
+          <h2>Chef&rsquo;s Friday tasting menu</h2>
+          <p>Seven courses with optional wine pairing. The next sitting starts in</p>
+          <div class="countdown" aria-live="off">
+            <div><strong data-unit="days">0</strong><span>days</span></div>
+            <div><strong data-unit="hours">0</strong><span>hours</span></div>
+            <div><strong data-unit="mins">0</strong><span>mins</span></div>
+            <div><strong data-unit="secs">0</strong><span>secs</span></div>
+          </div>
+        </div>
+        <div class="card loyalty reveal reveal-delay-1">
+          <span class="eyebrow">Loyalty scheme</span>
+          <h2>The Gold Circle</h2>
+          <p>Every visit earns a stamp. Collect five for a complimentary chef&rsquo;s course. Try the demo below.</p>
+          <div class="stamps" aria-hidden="true">
+            <div class="stamp">1</div><div class="stamp">2</div><div class="stamp">3</div><div class="stamp">4</div><div class="stamp">5</div>
+          </div>
+          <p id="loyalty-status" aria-live="polite">5 more visit(s) until your reward.</p>
+          <button class="btn btn-primary" type="button" id="add-stamp">Simulate a visit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== (2) Contact details and (3) social media ===== -->
+    <section class="section section-alt" aria-labelledby="find-title">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <h2 id="find-title">Find &amp; contact Aurum</h2>
+          <address>
+            <p><strong>Aurum Restaurant</strong><br>14 Gold Leaf Walk, Spinningfields<br>Manchester M3 3AU (fictional)</p>
+            <p>Telephone <a href="tel:+441610000000">0161 000 0000</a><br>Email <a href="mailto:reservations@aurum-manchester.co.uk">reservations@aurum-manchester.co.uk</a></p>
+          </address>
+          <div class="table-wrap">
+            <table>
+              <caption>Opening hours</caption>
+              <thead><tr><th scope="col">Day</th><th scope="col">Lunch</th><th scope="col">Dinner</th></tr></thead>
+              <tbody>
+                <tr><td>Monday</td><td>Closed</td><td>Closed</td></tr>
+                <tr><td>Tuesday to Thursday</td><td>12.00 to 14.30</td><td>17.30 to 22.00</td></tr>
+                <tr><td>Friday and Saturday</td><td>12.00 to 15.00</td><td>17.30 to 23.00</td></tr>
+                <tr><td>Sunday</td><td>12.00 to 17.00</td><td>Closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h2>Follow Aurum</h2>
+          <p>Social media is Aurum&rsquo;s main channel for sharing new dishes, events and behind-the-scenes content. Each link opens in a new tab.</p>
+          <ul class="link-list">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg><span>Instagram<small>@aurum.manchester, dish photography and reels</small></span></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg><span>Facebook<small>Aurum Manchester, events and reviews</small></span></a></li>
+            <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg><span>X (Twitter)<small>@AurumMCR, live table availability</small></span></a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 2c.3 2.3 1.7 3.8 4 4v3.1c-1.4.1-2.7-.3-4-1.1v6.5c0 4-3.3 6.5-6.8 6-3.9-.5-5.9-4.6-4.2-8 1.1-2.2 3.4-3.4 6-3v3.3c-1.4-.4-2.9.2-3.4 1.5-.6 1.6.5 3.3 2.2 3.3 1.5 0 2.4-1.1 2.4-2.6V2h3.8z"/></svg><span>TikTok<small>@aurum.mcr, short kitchen videos</small></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== (4) Interactive booking and feedback form ===== -->
+    <section class="section" id="book" aria-labelledby="book-title">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <span class="eyebrow">Reservations &amp; feedback</span>
+          <h2 id="book-title">Book a table or share your feedback</h2>
+          <p>Fill in the form and press the button. JavaScript checks your details, then builds a ready-to-send email in your own mail app, so no data is stored on this website.</p>
+          <div class="notice">
+            <p><strong>How it works.</strong> Your details go straight from your device to Aurum&rsquo;s inbox through your email app. A preview of the generated email appears below the form.</p>
+          </div>
+        </div>
+
+        <form class="form card reveal reveal-delay-1" id="booking-form" novalidate>
+          <fieldset class="fieldset">
+            <legend>What can we help with?</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="enquiry" value="Table booking" checked> Table booking</label>
+              <label><input type="radio" name="enquiry" value="Feedback"> Feedback</label>
+              <label><input type="radio" name="enquiry" value="Private dining enquiry"> Private dining</label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" name="name" autocomplete="name" required maxlength="60">
+              <span class="error-msg" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="error-msg" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile number (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="07123 456789">
+            <span class="error-msg" aria-live="polite"></span>
+          </div>
+
+          <!-- booking-only fields, hidden for feedback enquiries -->
+          <div id="booking-fields" class="form">
+            <div class="form-row">
+              <div class="field">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="time">Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Choose a time</option>
+                  <option>12:00</option><option>13:00</option><option>14:00</option>
+                  <option>17:30</option><option>18:30</option><option>19:30</option><option>20:30</option><option>21:30</option>
+                </select>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="guests">Number of guests *</label>
+                <input type="number" id="guests" name="guests" min="1" max="12" value="2" required>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="occasion">Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option value="">None</option><option>Birthday</option><option>Anniversary</option><option>Business meal</option><option>Proposal</option>
+                </select>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message, dietary requirements or feedback</label>
+            <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+            <span class="hint" id="char-count" aria-live="off">0 / 500</span>
+          </div>
+
+          <div class="field">
+            <label class="checkbox"><input type="checkbox" name="marketing" value="yes"> Send me occasional emails about events and offers. You can unsubscribe at any time.</label>
+          </div>
+          <div class="field">
+            <label class="checkbox"><input type="checkbox" name="privacy" value="agreed" required> I have read the privacy notice below and agree to Aurum using my details to respond to this request. *</label>
+            <span class="error-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="btn-row mt-0">
+            <button class="btn btn-primary" type="submit">Generate my email &rarr;</button>
+            <button class="btn btn-ghost" type="reset">Clear form</button>
+          </div>
+
+          <div id="form-status" class="form-status" role="status"></div>
+          <pre id="email-preview" class="email-preview" hidden></pre>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Privacy, security and data protection ===== -->
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <span class="eyebrow reveal">Privacy, security &amp; data protection</span>
+        <h2 id="privacy-title" class="reveal">How Aurum protects your data</h2>
+        <div class="grid grid-3">
+          <article class="card reveal"><h3>UK GDPR principles</h3><p>Aurum only asks for the data needed to handle a booking (data minimisation) and uses it only for that purpose. Marketing consent is a separate, unticked box, as UK GDPR and PECR require.</p></article>
+          <article class="card reveal reveal-delay-1"><h3>No data stored here</h3><p>The form has no database. Details are passed to your own email app, so nothing is held on the website, reducing the risk of a data breach.</p></article>
+          <article class="card reveal reveal-delay-2"><h3>Cookies</h3><p>A cookie notice appears on the first visit. Only your cookie choice is saved in your browser. No tracking or advertising cookies are set.</p></article>
+          <article class="card reveal"><h3>Secure by default</h3><p>GitHub Pages serves the site over HTTPS. External links use rel="noopener noreferrer" to protect visitors, and input is validated before an email is built.</p></article>
+          <article class="card reveal reveal-delay-1"><h3>Your rights</h3><p>Guests can ask Aurum to see, correct or delete their data at any time by emailing the reservations team. Booking emails are deleted after 12 months.</p></article>
+          <article class="card reveal reveal-delay-2"><h3>Ethical design</h3><p>No dark patterns. Buttons say exactly what they do, and declining marketing never affects a booking.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== (5) Design choices ===== -->
+    <section class="section" aria-labelledby="design-title">
+      <div class="container">
+        <span class="eyebrow reveal">Design choices</span>
+        <h2 id="design-title" class="reveal">Why this solution is built the way it is</h2>
+        <div class="grid grid-2">
+          <div class="reveal">
+            <p>The page follows a guest&rsquo;s journey from discovery to booking, so every section moves the user closer to a reservation. A luxury palette of black and champagne gold matches Aurum&rsquo;s fine-dining positioning, while generous spacing keeps the page calm and easy to scan.</p>
+            <p>I chose a client-side mailto approach rather than a paid booking platform because it meets the brief without a database, costs nothing to run and keeps personal data off the server. The trade-off is that staff still confirm bookings manually, so a future phase would integrate a booking API.</p>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <ul>
+              <li><strong>Mobile-first CSS Grid</strong> layout that adapts from phones to desktops.</li>
+              <li><strong>Tabbed menu</strong> built to the WAI-ARIA tabs pattern for keyboard and screen-reader users.</li>
+              <li><strong>Inline validation</strong> with clear, friendly error messages.</li>
+              <li><strong>Motion with care</strong>, as animations switch off for users who prefer reduced motion.</li>
+              <li><strong>Lightweight SVG graphics</strong> for fast loading on mobile data.</li>
+            </ul>
+            <p>The full development rationale is on my <a href="showcase.html#aurum">Business Showcase page</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== References (APA 7) ===== -->
+    <section class="section section-alt" aria-labelledby="ref-title">
+      <div class="container">
+        <h2 id="ref-title" class="reveal">References</h2>
+        <ul class="references reveal">
+          <li>Information Commissioner&rsquo;s Office. (n.d.). <em>Guide to PECR, cookies and similar technologies</em>. https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/</li>
+          <li>Information Commissioner&rsquo;s Office. (n.d.). <em>UK GDPR guidance and resources</em>. https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/</li>
+          <li>MDN Web Docs. (n.d.). <em>Intersection Observer API</em>. Mozilla. https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API</li>
+          <li>W3C. (2023). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. https://www.w3.org/TR/WCAG22/</li>
+          <li>W3C Web Accessibility Initiative. (n.d.). <em>Tabs pattern, ARIA Authoring Practices Guide</em>. https://www.w3.org/WAI/ARIA/apg/patterns/tabs/</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Saifullah Shafique. Hand-coded in HTML5, CSS3 and JavaScript.</p>
+      <p><a href="https://github.com/sshafique1/web-app-dev">View source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+  <!-- ===== Cookie consent notice (GDPR / PECR) ===== -->
+  <div class="cookie-banner" role="region" aria-label="Cookie notice">
+    <p><strong>Cookies and your privacy.</strong> This site only stores your cookie choice in your browser. No tracking or advertising cookies are used. See the privacy section on the <a href="solution.html#privacy">Problem-Solving page</a>.</p>
+    <div class="btn-row">
+      <button class="btn btn-primary" type="button" data-cookie="accepted">Accept</button>
+      <button class="btn btn-ghost" type="button" data-cookie="essential">Essential only</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/restaurant.js"></script>
+</body>
+</html>

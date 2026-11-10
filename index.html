@@ -1,17 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Saif Shafique, a Business Management with Innovation and Technology student at the University of Salford.">
+  <meta name="author" content="Saifullah Shafique">
+  <title>Home | Saif Shafique</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts (Playfair Display for headings, Inter for body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;700&amp;display=swap" rel="stylesheet">
+  <!-- one external stylesheet shared by all five pages -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>  
-</body>  
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <!-- ===== Site header and primary navigation ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="38" height="38">
+          <span>Saif Shafique</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="showcase.html">Business Showcase</a></li>
+          <li><a href="solution.html">Problem-Solving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow reveal">Business &amp; Technology Portfolio</span>
+          <h1 id="hero-title" class="reveal reveal-delay-1">Hi, I&rsquo;m <span class="gold">Saif Shafique</span>.<br>I turn business problems into <span class="typed" data-words='["digital solutions.","clean websites.","data insights.","better customer experiences."]'>digital solutions.</span></h1>
+          <p class="lead reveal reveal-delay-2">A First-Class Business Management with Innovation and Technology student at the University of Salford, combining commercial customer-facing experience with practical skills in web development, data and digital transformation.</p>
+          <div class="btn-row reveal reveal-delay-3">
+            <a class="btn btn-primary" href="showcase.html">View my projects &rarr;</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2">
+          <img src="images/hero-illustration.svg" alt="Illustration of a browser window showing code and a rising data chart" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quick stats ===== -->
+    <section class="section section-alt" aria-label="Highlights">
+      <div class="container stats">
+        <div class="stat reveal"><strong data-count="1">0</strong><span>First-Class year at Salford</span></div>
+        <div class="stat reveal reveal-delay-1"><strong data-count="4">0</strong><span>Customer-facing roles</span></div>
+        <div class="stat reveal reveal-delay-2"><strong data-count="4">0</strong><span>Showcase projects</span></div>
+        <div class="stat reveal reveal-delay-3"><strong data-count="100" data-suffix="%">0</strong><span>Hand-coded site</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Professional summary ===== -->
+    <section class="section" aria-labelledby="about-title">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <span class="eyebrow">About me</span>
+          <h2 id="about-title">Professional summary</h2>
+          <p>I am a second-year undergraduate studying BSc (Hons) Business Management with Innovation and Technology at the University of Salford, where I achieved a First in my first year. My degree sits where business strategy meets technology, and that is exactly where I want to build my career.</p>
+          <p>Alongside my studies I have worked in demanding customer-facing roles at NatWest, Co-op, Selfridges and Snow+Rock. These roles taught me how organisations actually run day to day, why customer experience drives revenue, and how small process changes can save real time and money.</p>
+          <p>Outside of work I build things. I have designed a custom trading indicator, built a personal life dashboard, and I film and edit my own camera content. I learn fastest by making something real.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal reveal-delay-1">
+            <div class="icon" aria-hidden="true">&#9670;</div>
+            <h3>Career background</h3>
+            <p>Banking customer service and ID verification at NatWest, office-based customer experience at Co-op, luxury retail at Selfridges and specialist technical fitting at Snow+Rock.</p>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="icon" aria-hidden="true">&#9733;</div>
+            <h3>Interests</h3>
+            <p>Digital transformation, data visualisation, financial markets and algorithmic trading, web development and content creation.</p>
+          </article>
+          <article class="card reveal reveal-delay-3">
+            <div class="icon" aria-hidden="true">&#10148;</div>
+            <h3>Future goals</h3>
+            <p>Secure a 2027 summer internship or placement in technology consulting, IT audit or digital banking, then graduate into a role leading digital change in a commercial organisation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What I bring ===== -->
+    <section class="section section-alt" aria-labelledby="bring-title">
+      <div class="container">
+        <span class="eyebrow reveal">Personal brand</span>
+        <h2 id="bring-title" class="reveal">What I bring to a team</h2>
+        <div class="grid grid-3">
+          <article class="card reveal"><h3>Commercial awareness</h3><p>I understand customers because I have served thousands of them, from bank account holders to luxury shoppers.</p></article>
+          <article class="card reveal reveal-delay-1"><h3>Digital confidence</h3><p>HTML, CSS, JavaScript, Power BI and Excel. I am comfortable picking up new tools and applying them to business problems.</p></article>
+          <article class="card reveal reveal-delay-2"><h3>Problem solving</h3><p>I break messy problems into clear steps, test ideas quickly, and measure whether they actually worked.</p></article>
+        </div>
+        <div class="btn-row reveal">
+          <a class="btn btn-primary" href="solution.html">See my restaurant case study &rarr;</a>
+          <a class="btn btn-ghost" href="skills.html">View my skills</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Saifullah Shafique. Hand-coded in HTML5, CSS3 and JavaScript.</p>
+      <p><a href="https://github.com/sshafique1/web-app-dev">View source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+  <!-- ===== Cookie consent notice (GDPR / PECR) ===== -->
+  <div class="cookie-banner" role="region" aria-label="Cookie notice">
+    <p><strong>Cookies and your privacy.</strong> This site only stores your cookie choice in your browser. No tracking or advertising cookies are used. See the privacy section on the <a href="solution.html#privacy">Problem-Solving page</a>.</p>
+    <div class="btn-row">
+      <button class="btn btn-primary" type="button" data-cookie="accepted">Accept</button>
+      <button class="btn btn-ghost" type="button" data-cookie="essential">Essential only</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
