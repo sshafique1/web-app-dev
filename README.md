@@ -32,7 +32,7 @@ HTML5, CSS3 (Grid, Flexbox, custom properties, media queries) and vanilla JavaSc
 - Internal links and images checked
 
 ## Use of generative AI
-I used Claude (Anthropic) as an AI assistant on this project, within the module's restricted-use rules. It generated the HTML, CSS and JavaScript, drafted first versions of the written content, which I checked and corrected against my own details and the brief, and helped me plan and debug the site. I supplied my real CV, qualifications and project details, chose the projects to showcase, merged the pages into this existing repository and deployed it on GitHub Pages. The full statement is in my submission document.
+I used Claude (Anthropic) as an AI assistant on this project, within the module's restricted-use rules. It generated the HTML, CSS and JavaScript, drafted first versions of the written content, which I checked and corrected against my own details and the brief (I rewrote parts of the development rationale in my own words), and helped me plan and debug the site. I supplied my real CV, qualifications and project details, chose the projects to showcase, merged the pages into this existing repository, deployed it on GitHub Pages and tested it in my browser and on my phone. The full statement is in my submission document.
 
 ## Live site
 https://sshafique1.github.io/web-app-dev/
