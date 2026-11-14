@@ -1,0 +1,5 @@
+# Allow all search engines to crawl the portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://sshafique1.github.io/web-app-dev/sitemap.xml
