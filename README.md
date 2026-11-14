@@ -14,7 +14,7 @@ Hand-coded personal portfolio for the Web App Development module (CRN 59135), Un
 css/style.css      single external stylesheet
 js/main.js         shared behaviour (nav, animations, cookie banner)
 js/restaurant.js   menu tabs, loyalty demo, form validation, email generation
-images/            hand-made SVG graphics
+images/            SVG graphics
 ```
 
 ## Technologies
@@ -26,7 +26,7 @@ HTML5, CSS3 (Grid, Flexbox, custom properties, media queries) and vanilla JavaSc
 - Internal links and images checked
 
 ## Use of generative AI
-I used Claude (Anthropic) as a coding assistant on this project, within the module's restricted-use rules. It helped me plan the page structure, generate and debug parts of the HTML, CSS and JavaScript, and check my writing for clarity. I wrote the brief for each feature, reviewed and tested every change, rewrote content in my own words, and corrected anything that did not match the assessment brief (for example, removing an inaccurate "mobile-first" claim after reviewing the CSS). All personal details, project descriptions and design decisions are my own. The full statement is in my submission document.
+I used Claude (Anthropic) as an AI assistant on this project, within the module's restricted-use rules. It generated the HTML, CSS and JavaScript, drafted the written content and helped me plan and debug the site. I supplied my real CV, qualifications and project details, chose the projects to showcase, merged the pages into this existing repository and deployed it on GitHub Pages. The full statement is in my submission document.
 
 ## Live site
 https://sshafique1.github.io/web-app-dev/
