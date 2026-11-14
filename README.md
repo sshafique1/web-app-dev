@@ -25,5 +25,8 @@ HTML5, CSS3 (Grid, Flexbox, custom properties, media queries) and vanilla JavaSc
 - Tested at mobile (390px), tablet (768px) and desktop (1366px) widths
 - Internal links and images checked
 
+## Use of generative AI
+I used Claude (Anthropic) as a coding assistant on this project, within the module's restricted-use rules. It helped me plan the page structure, generate and debug parts of the HTML, CSS and JavaScript, and check my writing for clarity. I wrote the brief for each feature, reviewed and tested every change, rewrote content in my own words, and corrected anything that did not match the assessment brief (for example, removing an inaccurate "mobile-first" claim after reviewing the CSS). All personal details, project descriptions and design decisions are my own. The full statement is in my submission document.
+
 ## Live site
 https://sshafique1.github.io/web-app-dev/
